@@ -1,0 +1,137 @@
+/* CSS  Section  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0ecf8, #f0f4f8);
+    color: #333;
+    padding: 40px;
+    line-height: 1.6;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Main Container     */
+/* ------------------ */
+.container {
+    max-width: 1550px; 
+    width: 90%; 
+    margin: auto;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* font style */
+.red {
+    color: red;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.blue {
+    color: #0077cc;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Hover Effect  */
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings Style   */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    animation: slideIn 0.8s ease-out;
+}
+
+h2 {
+    color: #34495e;
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs & Lists */
+p,
+li {
+    font-size: 1.15em; 
+    margin-bottom: 10px;
+}
+
+/* Introduction Paragraph */
+.intro {
+    font-size: 1.25em; 
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+/* Unordered List Styling */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Links Styling      */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1c5980;
+    text-decoration: underline;
+}
+
+/* Responsive Design  */
+/* ------------------ */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .intro {
+        font-size: 1.1em;
+    }
+}
+/* Image Styling      */
+/* Profile Image Specific Class */
+.profile-pic {
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+/*  In Animation on Page Load */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/*  In Animation for Heading */
+@keyframes slideIn {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
